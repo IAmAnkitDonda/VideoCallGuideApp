@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.livechat.videocallguide.videocall">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VideoCallGuideChat"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme">
+        <activity
+            android:name=".FakeVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DialerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VideoCallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BlankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewAdviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RoomListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectGenderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AgeSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChatWithGirlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContactListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateVideoCallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VideoCallAdviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FakeAllCallChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/fb_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/am_app_id" />
+    </application>
+
+</manifest>

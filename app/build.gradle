@@ -1,0 +1,89 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.livechat.videocallguide.videocall"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    // ButterKnife - No Proguard Needed
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+    //Circle Image View
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Number Picker
+    implementation 'com.shawnlin:number-picker:2.4.11'
+
+    //Ripple Background
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+
+    // Camera View
+    implementation 'com.otaliastudios:cameraview:2.6.4'
+
+    // Google Ads
+    implementation 'com.google.android.gms:play-services-ads:19.5.0'
+
+    // MultiDex
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //Dexter
+    implementation 'com.karumi:dexter:6.2.1'
+
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //FaceBook  Ads
+    implementation 'com.facebook.android:audience-network-sdk:5.5.0'
+
+    // Rating Bar
+    implementation 'com.github.fuzz-productions:RatingBar:1.0.6'
+
+    // Circular Seek Bar
+    implementation 'com.github.stefanodp91.android:circularseekbar:0.2'
+
+
+}
